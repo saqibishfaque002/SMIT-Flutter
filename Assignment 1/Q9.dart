@@ -12,6 +12,6 @@ void main() {
   } else {
   // If the number is odd, check if it is divisible by 7
     bool isDivisibleBy7 = number % 7 == 0;
-    print('The number $number is odd and divisible by 7.');
+    print('The number $number is odd and divisible by 7.'); 
   }
 }
