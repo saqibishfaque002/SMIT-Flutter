@@ -68,7 +68,7 @@ void main() {
   
   // Modulo operator (%): The modulo operator returns the remainder of a division operation.
   int remRes = a % b;
-  print(remRes);
+  print(remRes); 
   
   // if-else statement is a control flow statement that allows you to execute different code
   if (12 > 11) {
