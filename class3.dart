@@ -12,4 +12,7 @@ git add remote origin "Repo link"
 git push -u origin master
 
 For project update:
+git add .
+git commit -m "message"
+git push
 */
