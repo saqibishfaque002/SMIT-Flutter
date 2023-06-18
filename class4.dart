@@ -63,6 +63,6 @@ void main() {
   List studentNum = [2, 5, 1, 7, 4, 11];
   // studentNum.remove(5);
   // studentNum.removeAt(2);
-  studentNum.removeWhere((element) => element > 8);
+  studentNum.removeWhere((element) => element < 8);
   print(studentNum);
 }
