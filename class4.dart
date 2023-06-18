@@ -49,4 +49,20 @@ void main() {
   // studentNum.add(6);
   // studentNum.addAll([4,5,6,7]);
   // print(studentNum);
+
+  // List studentNum = [2, 5, 1, 7, 4];
+  // studentNum.insert(1, 4);
+  // studentNum.insertAll(0, [12,243,35,54]);
+  // print(studentNum);
+
+  // List studentNum = [2, 5, 1, 7, 4];
+  // studentNum.isEmpty;
+  // studentNum.isNotEmpty;
+  // print(studentNum);
+
+  List studentNum = [2, 5, 1, 7, 4, 11];
+  // studentNum.remove(5);
+  // studentNum.removeAt(2);
+  studentNum.removeWhere((element) => element > 8);
+  print(studentNum);
 }
