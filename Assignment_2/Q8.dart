@@ -1,20 +1,17 @@
 // Q.8: From Q3 write a program that prints the days that start with the letter "S".
 void main() {
-  // Q3
-  List<String> days = [
+  List<String> daysOfWeek = [
+    'Sunday',
     'Monday',
     'Tuesday',
     'Wednesday',
     'Thursday',
     'Friday',
-    'Saturday',
-    'Sunday'
+    'Saturday'
   ];
 
-  // Iterate through the list and print days that start with "S"
-  for (String day in days) {
-    if (day.startsWith("S")) {
-      print(day);
-    }
-  }
+  List<String> daysStartingWithS =
+      daysOfWeek.where((day) => day.startsWith('S')).toList();
+
+  daysStartingWithS.forEach((day) => print(day));
 }

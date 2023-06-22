@@ -15,7 +15,5 @@ void main() {
   days.add('Saturday');
 
   // Print all days in the list
-  for (String day in days) {
-    print(day);
-  }
+  days.forEach((day) => print(day));
 }

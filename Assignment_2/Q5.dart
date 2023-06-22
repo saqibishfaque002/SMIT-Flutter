@@ -1,22 +1,21 @@
 // Q.5: Create a list of numbers & write a program to get the smallest & greatest number from a list.
 void main() {
-  // Create a list of numbers
-  List<int> numbers = [10, 4, 2, 9, 7, 5, 1, 3, 8, 6];
+  List<int> numbers = [5, 3, 9, 2, 7, 1, 6, 4, 8];
 
-  // Initialize smallest and greatest numbers
-  int smallestNumber = numbers[0];
-  int greatestNumber = numbers[0];
+  int smallest = numbers[0];
+  int greatest = numbers[0];
 
-  // Iterate through the list and find the smallest and greatest numbers
-  for (int number in numbers) {
-    if (number < smallestNumber) {
-      smallestNumber = number;
-    } else if (number > greatestNumber) {
-      greatestNumber = number;
+  numbers.forEach((number) {
+    if (number < smallest) {
+      smallest = number;
     }
-  }
 
-  // Print the smallest and greatest numbers
-  print("The smallest number is: $smallestNumber");
-  print("The greatest number is: $greatestNumber");
+    if (number > greatest) {
+      greatest = number;
+    }
+  });
+
+  print('Numbers: $numbers');
+  print('Smallest Number: $smallest');
+  print('Greatest Number: $greatest');
 }
