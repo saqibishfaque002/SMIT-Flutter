@@ -2,18 +2,20 @@
 Use the add method to add names of 7 days and print all days.
 */
 void main() {
-  // Create an empty list of type string
+  // Create an empty list of type String
   List<String> days = [];
 
-  // Add names of 7 days to the list
-  days.add('Sunday');
-  days.add('Monday');
-  days.add('Tuesday');
-  days.add('Wednesday');
-  days.add('Thursday');
-  days.add('Friday');
-  days.add('Saturday');
+  // Add names of the 7 days using add method
+  days.add("Monday");
+  days.add("Tuesday");
+  days.add("Wednesday");
+  days.add("Thursday");
+  days.add("Friday");
+  days.add("Saturday");
+  days.add("Sunday");
 
-  // Print all days in the list
-  days.forEach((day) => print(day));
+  // Print all days using forEach method
+  days.forEach((day) {
+    print(day);
+  });
 }
