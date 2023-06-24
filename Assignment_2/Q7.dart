@@ -1,12 +1,28 @@
 /*
-Q.7: Create a list of numbers 
-& write a program that removes all even numbers from the list and adds 1 to each odd number left.
+Q.7:
+Map<String, double> expenses = {
+  'sun': 3000.0,
+  'mon': 3000.0,
+  'tue': 3234.0,
+};
+Check if "fri" exist in expanses; 
+if exist change it's value to 5000.0 otherwise add 'fri' to expenses 
+and set its value to 5000.0 then print expenses.
 */
 void main() {
-  List<int> numbers = [2, 5, 8, 9, 12, 15, 18, 21, 24, 27];
+  Map<String, double> expenses = {
+    'sun': 3000.0,
+    'mon': 3000.0,
+    'tue': 3234.0,
+  };
 
-  numbers.removeWhere((number) => number % 2 == 0);
-  numbers = numbers.map((number) => number + 1).toList();
+  // Check if "fri" exists in expenses
+  if (expenses.containsKey('fri')) {
+    expenses['fri'] = 5000.0;
+  } else {
+    expenses['fri'] = 5000.0;
+  }
 
-  print('Modified Numbers: $numbers');
+  // Print expenses
+  print(expenses);
 }
