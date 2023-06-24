@@ -1,4 +1,5 @@
-// Q.5: Create a list of numbers & write a program to get the smallest & greatest number from a list.
+// Q.5: Create a map with name, phone keys and store some values to it.
+// Use where to find all keys that have length 4.
 void main() {
   // Create a map with name and phone keys
   Map<String, dynamic> contactMap = {
@@ -15,4 +16,3 @@ void main() {
   // Print the keys with length 4
   print("Keys with length 4: $keysWithLength4");
 }
-
