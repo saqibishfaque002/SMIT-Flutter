@@ -1,24 +1,43 @@
-// Q4
+/*
+Q.6: Create Map variable name world then inside it create countries Map, 
+Key will be the name country & country value will have another map having capitalCity, currency and language to it. 
+by using any country key print all the value of Capital & Currency.
+*/
+import 'dart:io';
+
 void main() {
-  List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  List<bool> evenOddList = [];
+  // Create the world map
+  Map<String, Map<String, String>> world = {
+    "USA": {
+      "capitalCity": "Washington D.C.",
+      "currency": "US Dollar",
+      "language": "English"
+    },
+    "Germany": {
+      "capitalCity": "Berlin",
+      "currency": "Euro",
+      "language": "German"
+    },
+    "Japan": {
+      "capitalCity": "Tokyo",
+      "currency": "Japanese Yen",
+      "language": "Japanese"
+    }
+  };
+  // Print the capital and currency of a specific country
+  String countryKey = "USA";
+  print(world[countryKey]);
+  exit;
+  var countryInfo = world[countryKey];
 
-  numbers.forEach((number) {
-    bool isEven = number % 2 == 0;
-    evenOddList.add(isEven);
-  });
+  if (countryInfo != null) {
+    var capitalCity = countryInfo["capitalCity"];
+    var currency = countryInfo["currency"];
 
-  print('Numbers: $numbers');
-  print('Even/Odd List: $evenOddList');
-
-  // Q.6: Remove all false values from Q4 list by using removeWhere or retainWhere property.
-  // removeWhere
-  evenOddList.removeWhere((value) => value == false);
-  print('Updated removeWhere List: $evenOddList');
-
-  // retainWhere
-  evenOddList.retainWhere((value) => value == true);
-  print('Updated retainWhere List: $evenOddList');
-
-
+    print("Country: $countryKey");
+    print("Capital City: $capitalCity");
+    print("Currency: $currency");
+  } else {
+    print("Country not found!");
+  }
 }
