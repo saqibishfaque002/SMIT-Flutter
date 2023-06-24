@@ -1,21 +1,18 @@
 // Q.5: Create a list of numbers & write a program to get the smallest & greatest number from a list.
 void main() {
-  List<int> numbers = [5, 3, 9, 2, 7, 1, 6, 4, 8];
+  // Create a map with name and phone keys
+  Map<String, dynamic> contactMap = {
+    "name": "Saqib",
+    "phone": 1234567890,
+    "city": "Karachi",
+    "address": "Karachi Sindh, Pakistan"
+  };
 
-  int smallest = numbers[0];
-  int greatest = numbers[0];
+  // Find keys with length 4 using where method
+  List<String> keysWithLength4 =
+      contactMap.keys.where((key) => key.length == 4).toList();
 
-  numbers.forEach((number) {
-    if (number < smallest) {
-      smallest = number;
-    }
-
-    if (number > greatest) {
-      greatest = number;
-    }
-  });
-
-  print('Numbers: $numbers');
-  print('Smallest Number: $smallest');
-  print('Greatest Number: $greatest');
+  // Print the keys with length 4
+  print("Keys with length 4: $keysWithLength4");
 }
+
